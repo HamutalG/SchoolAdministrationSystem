@@ -1,0 +1,231 @@
+.studentsContainer, .coursesContainer {
+    width: 250px;
+    height: 100vh;
+    float: left;
+    display: block;
+    position: relative;
+    margin-left: 2%;
+    overflow-wrap: break-word;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+.studentList, .coursesList{
+    width: 220px;
+    height: 100vh;
+    float: left;
+    display: block;
+    position: relative;
+    margin-left: 2%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+}
+
+.studentList::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.studentList::-webkit-scrollbar-track {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.studentList::-webkit-scrollbar-thumb {
+    background: lightgray;  
+    border-radius: 10px;
+}
+
+.studentList::-webkit-scrollbar-thumb:hover {
+    background: darkgray;  
+}
+
+.coursesList::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.coursesList::-webkit-scrollbar-track {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.coursesList::-webkit-scrollbar-thumb {
+    background: lightgray;  
+    border-radius: 10px;
+}
+
+.coursesList::-webkit-scrollbar-thumb:hover {
+    background: darkgray;  
+}
+
+#studentsTitle, #coursesTitle{
+    border-bottom: 1px solid black; 
+    width: 150px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.plusGlyph, .plusCGlyph{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.plusGlyph:hover, .plusCGlyph:hover{
+    cursor: pointer;
+}
+
+#studentPic, #coursePic {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eachStudent, .eachCourse {
+    width: 200px;
+    border: solid 1px darkgrey;
+    padding-bottom: 10px;
+    overflow-wrap: break-word;
+}
+
+.desc{
+    overflow-wrap: break-word;
+}
+
+.studentInfo, .courseInfo{
+    margin-left: 10px;
+}
+
+.changingContainer{
+    height: 100vh;
+    float: right;
+    display: block;
+    position: relative;
+    margin-right: 3%;
+    margin-top: 25px;
+}
+
+.showOrHideStudentInfo, .showOrHideCourseInfo{
+    width: 350px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;  
+    font-family: 'Anonymous Pro', monospace;
+}
+
+.studentDetails, .courseDetails, #addStudentForm, #EditDeleteStudentForm, #addCourseForm, #EditDeleteCourseForm{
+    width: 600px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.studentDetails, .courseDetails{
+    width: 400px;
+}
+
+#dltBtn, #dltCBtn, #dltSBtn{
+    float: right;
+}
+
+#dltBtn, #dltSBtn, #saveBtn, #editStuBtn, #editSBtn, #saveCBtn, #editCBtn, #dltCBtn, #editCourseBtn {
+    background: #d6d6d6;
+    background-image: -webkit-linear-gradient(top, #d6d6d6, #969696);
+    background-image: -moz-linear-gradient(top, #d6d6d6, #969696);
+    background-image: -ms-linear-gradient(top, #d6d6d6, #969696);
+    background-image: -o-linear-gradient(top, #d6d6d6, #969696);
+    background-image: linear-gradient(to bottom, #d6d6d6, #969696);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border-top: none;
+}
+
+#dltBtn:hover, #dltSBtn:hover, #saveBtn:hover, #editStuBtn:hover, #editSBtn:hover, #saveCBtn:hover, #editCBtn:hover, #dltCBtn:hover, #editCourseBtn:hover {
+    background: #a6a6a6;
+    background-image: -webkit-linear-gradient(top, #a6a6a6, #737373);
+    background-image: -moz-linear-gradient(top, #a6a6a6, #737373);
+    background-image: -ms-linear-gradient(top, #a6a6a6, #737373);
+    background-image: -o-linear-gradient(top, #a6a6a6, #737373);
+    background-image: linear-gradient(to bottom, #a6a6a6, #737373);
+    text-decoration: none;
+}
+
+#innerForm, #innerCourseInfo{
+    width: 200px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.showOrHideAddStudentForm, .showOrHideAddCourseForm, .showOrHideEditDeleteStudentForm, .showOrHideEditDeleteCourseForm, .showOrHideCourseInfo, .showOrHideStudentInfo{
+    display: none;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+#studentInfoTitle, #courseInfoTitle {
+    text-align: left;
+}
+
+.stuInfo, .courInfo{
+    width: 250px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    text-align: center;
+    overflow-wrap: break-word;
+}
+
+.eachStudent, .eachCourse{
+    cursor: pointer;
+}
+
+#imgToDisplayE, #CimgToDisplayE{
+    height: 100px;
+}
+
+#courseOfStudentPics{
+    height: 60px;
+    margin-bottom: 10px;
+}
+
+#coursesOfStudentlabel, #studentOfCourseslabel{
+    float: left;
+}
+
+.ScourseList, .CStudentList{
+    float: left;
+    display: block;
+}
+
+.ScourseListItems, .CStudentListItems{
+    float: left;
+    display: block;
+    overflow-wrap: break-word;
+    border-bottom: 1px dashed black;
+}
+
+.SCInfo{
+    font-weight: bolder;
+}
+
+.courseCheckboxes{
+    margin-right: 5px;
+}
+
+#addCoursesToStudent, #editCoursesForStudent{
+    list-style-type: none;
+}
+
+.totals{
+    font-family: 'Anonymous Pro', monospace;
+}

@@ -1,0 +1,170 @@
+.adminContainer {
+    width: 250px;
+    height: 100vh;
+    float: left;
+    display: block;
+    position: relative;
+    margin-left: 2%;
+    overflow-wrap: break-word;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+.userList{
+    width: 250px;
+    height: 100vh;
+    float: left;
+    display: block;
+    position: relative;
+    margin-left: 2%;
+    overflow-x: hidden;
+    overflow-y: auto;
+    overflow-wrap: break-word;
+}
+
+.userList::-webkit-scrollbar {
+    width: 12px;
+    height: 12px;
+}
+
+.userList::-webkit-scrollbar-track {
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+
+.userList::-webkit-scrollbar-thumb {
+    background: lightgray;  
+    border-radius: 10px;
+}
+
+.userList::-webkit-scrollbar-thumb:hover {
+    background: darkgray;  
+}
+
+#adminTitle{
+    border-bottom: 1px solid black; 
+    width: 250px;
+    text-align: center;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.plusGlyph{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.plusGlyph:hover{
+    cursor: pointer;
+}
+
+#adminpic {
+    width: 100px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.eachUser {
+    width: 200px;
+    border: solid 1px darkgrey;
+    overflow-wrap: break-word;
+    padding-bottom: 10px;
+    cursor: pointer;
+}
+
+.userInfo{
+    margin-left: 10px;
+}
+
+.changingContainer{
+    height: 100vh;
+    float: right;
+    display: block;
+    position: relative;
+    margin-right: 3%;
+}
+
+#addAdminForm, #EditDeleteAdminForm{
+    width: 600px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    border: 1px solid black;
+    padding: 20px;
+}
+
+.input-group{
+    width: 110%;
+}
+
+#dltBtn{
+    float: right;
+}
+
+#dltBtn , #saveBtn, #editBtn {
+    background: #d6d6d6;
+    background-image: -webkit-linear-gradient(top, #d6d6d6, #969696);
+    background-image: -moz-linear-gradient(top, #d6d6d6, #969696);
+    background-image: -ms-linear-gradient(top, #d6d6d6, #969696);
+    background-image: -o-linear-gradient(top, #d6d6d6, #969696);
+    background-image: linear-gradient(to bottom, #d6d6d6, #969696);
+    -webkit-border-radius: 28;
+    -moz-border-radius: 28;
+    border-radius: 28px;
+    font-family: Arial;
+    color: #ffffff;
+    font-size: 12px;
+    padding: 10px 20px 10px 20px;
+    text-decoration: none;
+    border-top: none;
+}
+
+#saveBtn:hover {
+    background: #a6a6a6;
+    background-image: -webkit-linear-gradient(top, #a6a6a6, #737373);
+    background-image: -moz-linear-gradient(top, #a6a6a6, #737373);
+    background-image: -ms-linear-gradient(top, #a6a6a6, #737373);
+    background-image: -o-linear-gradient(top, #a6a6a6, #737373);
+    background-image: linear-gradient(to bottom, #a6a6a6, #737373);
+    text-decoration: none;
+}
+
+#dltBtn:hover {
+    background: #a6a6a6;
+    background-image: -webkit-linear-gradient(top, #a6a6a6, #737373);
+    background-image: -moz-linear-gradient(top, #a6a6a6, #737373);
+    background-image: -ms-linear-gradient(top, #a6a6a6, #737373);
+    background-image: -o-linear-gradient(top, #a6a6a6, #737373);
+    background-image: linear-gradient(to bottom, #a6a6a6, #737373);
+    text-decoration: none;
+}
+
+#editBtn:hover{
+    background: #a6a6a6;
+    background-image: -webkit-linear-gradient(top, #a6a6a6, #737373);
+    background-image: -moz-linear-gradient(top, #a6a6a6, #737373);
+    background-image: -ms-linear-gradient(top, #a6a6a6, #737373);
+    background-image: -o-linear-gradient(top, #a6a6a6, #737373);
+    background-image: linear-gradient(to bottom, #a6a6a6, #737373);
+    text-decoration: none;
+}
+
+#innerForm{
+    width: 200px;
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.showOrHideAddForm, .showOrHideEditDeleteForm{
+    display: none;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+#AimgToDisplayE{
+    height: 100px;
+}
+
+.totals{
+    font-family: 'Anonymous Pro', monospace;
+}

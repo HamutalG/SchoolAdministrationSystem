@@ -1,0 +1,102 @@
+.navbar{
+    border: 1px solid #d4d4d4;
+    border-radius: 4px;
+    min-height: 60px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: #EDEDED;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.065);
+    background-image: linear-gradient(to bottom, #ffffff, #EDEDED);
+    background-repeat: repeat-x;
+    font-family: 'Anonymous Pro', monospace;
+}
+
+#schoolLogo{
+    width: 200px;
+    float: left;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+#schoolLink , #adminLink {
+    float: left;
+    display: inline-block;
+    margin: 20px;
+    padding-top: 4px;
+    padding-left: 40px;
+    border-left: 1px solid black;
+    color: #7c7d7f;
+    text-shadow: 0px 1px 0px rgba(255,255,255);
+}
+
+#schoolLink {
+    margin-left: 35px;
+}
+
+.navbarUser{
+    float: right;
+    display: block;
+
+}
+
+.navbarPic{
+    width: 80px;
+}
+
+#logout {
+    float: right;
+    margin-right:-55px;
+    margin-top: 45px;
+    display: block;
+}
+
+.navbarLinks{
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.fa-bars{
+    font-size: 40px;
+    color: grey;
+}
+.toggle{
+    width: 40px;
+    height: 50px;
+    padding: 0px;
+    margin-left: 220px;
+    margin-top: 20px;
+    display: none;
+}
+
+/*hamburger menu*/
+
+@media (max-width: 850px){
+    .toggle{
+        display: block;
+        float: left;
+        position: absolute;
+    }
+
+    .navbar{
+        min-height: 80px;
+    }
+
+    .navbarLinks{
+        display: none;
+        float: left;
+        margin-top: 80px;
+    }
+
+    #schoolLink , #adminLink{
+        text-align: center;
+        display: block;
+        border-left: none;
+        margin-top: 1px;
+        margin-left: -60px;
+    }
+
+    .active{
+        display: block;
+        float: left;
+    }
+}
