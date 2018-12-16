@@ -1,4 +1,4 @@
-# [School Administration System](https://onlineschooladministrationsystem.000webhostapp.com/)
+# School Administration System
 #### PHP - MySQL
 
 A multi-page web system that was developed as a service for a school which enables the management of students and courses. The service offers various permissions for the owner, manager and sales representatives.   
