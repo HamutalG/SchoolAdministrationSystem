@@ -25,7 +25,7 @@ require_once 'models/user.php';
     </head>
     <body>
         <nav class="navbar">
-            <img id="schoolLogo" src="../CSS/images/schoolLogo.PNG"/>
+            <img id="schoolLogo" src="../CSS/images/schoolLogo.png"/>
             <?php
             echo '<ul class="navbarLinks">';
             if (isset($_SESSION['Owner']) || isset($_SESSION['Sales']) || isset($_SESSION['Manager'])) {
@@ -80,6 +80,7 @@ require_once 'models/user.php';
         $request_uri = explode('?', $_SERVER['REQUEST_URI'], 2);
 
         switch ($request_uri[0]) {
+            case '/':
             case '/school':
                 if (isset($_SESSION['Owner']) || isset($_SESSION['Sales']) || isset($_SESSION['Manager'])) {
                     require 'views/school.php';
@@ -109,6 +110,7 @@ require_once 'models/user.php';
 
             case '/logout':
                 require 'views/logout.php';
+                require 'views/login.php';
                 break;
 
             default:
